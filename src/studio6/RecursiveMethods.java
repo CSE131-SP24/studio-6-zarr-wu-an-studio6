@@ -47,12 +47,27 @@ public class RecursiveMethods {
 	 * @return an array with the same data as the input but it reverse order
 	 */
 	public static int[] toReversed(int[] array) {
+		if(array.length == 1) {
+			return array;
+		}
+		else {
+			return toReversedHelper(array, 0);
+		}
 		
 			// FIXME create a helper method that can recursively reverse the given array
 			return new int[0];
 		
 	}
-
+	
+	public static int[] toReversedHelper(int[] array, int index) {
+		if(index == array.length - 1) {
+			return array;
+		}
+		else {
+			
+		}
+	}
+	
 	/**
 	 * @param xCenter                       x-coordinate of the center of the circle
 	 *                                      at the current depth
